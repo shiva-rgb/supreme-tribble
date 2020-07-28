@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hand Cricket</title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+    <section class="game">
+        <div class="score">
+            <div class="player-runs">
+                <h2>Player</h2>
+                <p id="playerScore">0</p>
+            </div>
+        </div>
+
+        <div class="intro">
+            <h1>Welcome to Hand Cricket</h1>
+            <img class="start-hand" src="./hands/start.png" alt=""/>
+            <button>Let's play</button>
+        </div>
+        
+
+        <div class="match fadeOut">
+            <h2 class="winner">You can Bat</h2>
+            <div class="hands">
+                <img id="PlayerHand" class="player-hand" src="./hands/zero.png" alt="" />
+                <img id="ComputerHand" class="computer-hand" src="./hands/zero.png" alt="" />
+                
+            </div>
+        </div>
+
+        <div class="options fadeOut">
+            <h2 class="choose">Choose the buttons</h2>
+            <div class="row">
+                <button class="zero">zero</button>
+                <button class="one">one</button>
+                <button class="two">two</button>
+            </div>
+            <div class="row">
+                <button class="three">three</button>
+                <button class="four">four</button>
+                <button class="five">five</button>
+            </div>
+            <div class="lastrow">
+                <button class="six">six</button>
+            </div>  
+        </div>
+        <div class= "resetBtn fadeOut">
+            <button class="new" id="resetbtn" onClick="newGame()">Reset</button>
+        </div>
+        
+        </section>
+    
+
+    <script src="app.js"></script>
+</body>
+</html>
